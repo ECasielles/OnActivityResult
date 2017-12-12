@@ -1,4 +1,4 @@
-package com.example.usuario.startactivityforresult;
+package com.example.usuario.onactivityresult;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class SecondaryActivity extends AppCompatActivity {
 
@@ -43,7 +42,11 @@ public class SecondaryActivity extends AppCompatActivity {
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //2.- Se añade el mensaje al intent
+                Intent intent = new Intent(SecondaryActivity.this, MainActivity.class);
+                //3.- Indicar que el reslutado ha sido correcto
                 setResult(RESULT_CANCELED);
+                finish();
             }
         });
 

@@ -1,4 +1,4 @@
-package com.example.usuario.startactivityforresult;
+package com.example.usuario.onactivityresult;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
